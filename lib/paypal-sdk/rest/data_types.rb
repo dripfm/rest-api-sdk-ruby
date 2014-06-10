@@ -113,6 +113,8 @@ module PayPal::SDK
 
         def self.load_members
           object_of :id, String
+          object_of :create_time, DateTime
+          object_of :update_time, DateTime
           object_of :number, String
           object_of :type, String
           object_of :expire_month, Integer
